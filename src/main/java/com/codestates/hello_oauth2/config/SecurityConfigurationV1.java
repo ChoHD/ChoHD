@@ -13,18 +13,18 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 //@Configuration
 //@EnableWebSecurity(debug = true)
-public class SecurityConfigurationV1 {
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .formLogin().disable()
-                .httpBasic().disable()
-                .authorizeHttpRequests(authorize -> authorize
-                        .anyRequest().authenticated()
-                )
-                .oauth2Login();
-
-        return http.build();
-    }
-}
+//public class SecurityConfigurationV1 {
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//        http
+//                .csrf().disable()
+//                .formLogin().disable()
+//                .httpBasic().disable()
+//                .authorizeHttpRequests(authorize -> authorize
+//                        .anyRequest().authenticated()
+//                )
+//                .oauth2Login();
+//
+//        return http.build();
+//    }
+//}

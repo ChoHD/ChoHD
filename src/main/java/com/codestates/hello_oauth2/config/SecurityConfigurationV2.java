@@ -15,37 +15,37 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 //@Configuration
 //@EnableWebSecurity(debug = true)
-public class SecurityConfigurationV2 {
-    @Value("${spring.security.oauth2.client.registration.google.clientId}")  // (1)
-    private String clientId;
-
-    @Value("${spring.security.oauth2.client.registration.google.clientSecret}") // (2)
-    private String clientSecret;
-
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .formLogin().disable()
-                .httpBasic().disable()
-                .authorizeHttpRequests(authorize -> authorize
-                        .anyRequest().authenticated()
-                )
-                .oauth2Login(withDefaults());
-        return http.build();
-    }
-    @Bean         // (3)
-    public ClientRegistrationRepository clientRegistrationRepository() {
-        var clientRegistration = clientRegistration();          // (3-1)
-
-        return new InMemoryClientRegistrationRepository(clientRegistration);         // (3-2)
-    }
-    private ClientRegistration clientRegistration() {      // (4)
-        return CommonOAuth2Provider            // (4-1)
-                .GOOGLE
-                .getBuilder("google")
-                .clientId(clientId)
-                .clientSecret(clientSecret)
-                .build();
-    }
-}
+//public class SecurityConfigurationV2 {
+//    @Value("${spring.security.oauth2.client.registration.google.clientId}")  // (1)
+//    private String clientId;
+//
+//    @Value("${spring.security.oauth2.client.registration.google.clientSecret}") // (2)
+//    private String clientSecret;
+//
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//        http
+//                .csrf().disable()
+//                .formLogin().disable()
+//                .httpBasic().disable()
+//                .authorizeHttpRequests(authorize -> authorize
+//                        .anyRequest().authenticated()
+//                )
+//                .oauth2Login(withDefaults());
+//        return http.build();
+//    }
+//    @Bean         // (3)
+//    public ClientRegistrationRepository clientRegistrationRepository() {
+//        var clientRegistration = clientRegistration();          // (3-1)
+//
+//        return new InMemoryClientRegistrationRepository(clientRegistration);         // (3-2)
+//    }
+//    private ClientRegistration clientRegistration() {      // (4)
+//        return CommonOAuth2Provider            // (4-1)
+//                .GOOGLE
+//                .getBuilder("google")
+//                .clientId(clientId)
+//                .clientSecret(clientSecret)
+//                .build();
+//    }
+//}

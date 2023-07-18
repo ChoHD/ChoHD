@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeControllerV6 {
+    private final OAuth2AuthorizedClientService auth2AuthorizedClientService;
+
+    public HomeControllerV6(OAuth2AuthorizedClientService auth2AuthorizedClientService) {
+        this.auth2AuthorizedClientService = auth2AuthorizedClientService;
+    }
+
     @GetMapping("/hello-oauth2")
     public String home(@RegisteredOAuth2AuthorizedClient("google") OAuth2AuthorizedClient authorizedClient) {
 

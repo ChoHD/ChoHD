@@ -26,12 +26,12 @@ import java.util.Optional;
 @Service
 public class MemberService {
     private final MemberRepository memberRepository;
-    private final ApplicationEventPublisher publisher;
+//    private final ApplicationEventPublisher publisher;
 
     public MemberService(MemberRepository memberRepository,
                          ApplicationEventPublisher publisher) {
         this.memberRepository = memberRepository;
-        this.publisher = publisher;
+//        this.publisher = publisher;
 
     }
 
@@ -40,20 +40,20 @@ public class MemberService {
         Member savedMember = memberRepository.save(member);
 
         // 추가된 부분
-        publisher.publishEvent(new MemberRegistrationApplicationEvent(this, savedMember));
+//        publisher.publishEvent(new MemberRegistrationApplicationEvent(this, savedMember));
         return savedMember;
     }
 
     @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.SERIALIZABLE)
     public Member updateMember(Member member) {
         Member findMember = findVerifiedMember(member.getMemberId());
-
-        Optional.ofNullable(member.getName())
-                .ifPresent(name -> findMember.setName(name));
-        Optional.ofNullable(member.getPhone())
-                .ifPresent(phone -> findMember.setPhone(phone));
-        Optional.ofNullable(member.getMemberStatus())
-                .ifPresent(memberStatus -> findMember.setMemberStatus(memberStatus));
+//
+//        Optional.ofNullable(member.getName())
+//                .ifPresent(name -> findMember.setName(name));
+//        Optional.ofNullable(member.getPhone())
+//                .ifPresent(phone -> findMember.setPhone(phone));
+//        Optional.ofNullable(member.getMemberStatus())
+//                .ifPresent(memberStatus -> findMember.setMemberStatus(memberStatus));
 
         return memberRepository.save(findMember);
     }

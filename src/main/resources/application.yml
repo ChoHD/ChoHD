@@ -15,6 +15,16 @@ spring:
   sql:
     init:
       data-locations: classpath*:db/h2/data.sql
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 206057718173-3bj55k82km78m3rk4kch9t3p18bqhfur.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
 logging:
   level:
     org:
@@ -28,3 +38,8 @@ server:
 mail:
   address:
     admin: admin@gmail.com
+jwt:
+  key:
+    secret: ${JWT_SECRET_KEY}               # 민감한 정보는 시스템 환경 변수에서 로드한다.
+  access-token-expiration-minutes: 30
+  refresh-token-expiration-minutes: 420

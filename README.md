@@ -12,7 +12,7 @@
 <img alt="EC2" src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-circle&logo=Amazon-EC2&logoColor=white" width="120" />
 
 #### 🛢️ Databases
-<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-circle&logo=mysql&logoColor=white" width="110" />
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-circle&logo=mysql&logoColor=white" width="120" />
 <img alt="H2" src="https://img.shields.io/badge/H2-0174AF?style=flat-circle&logo=h2-database&logoColor=white" width="45" />
 
 #### 🧰 Tools

@@ -13,7 +13,7 @@
 
 #### 🛢️ Databases
 <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-circle&logo=mysql&logoColor=white" width="110" />
-<img alt="H2" src="https://img.shields.io/badge/H2-0174AF?style=flat-circle&logo=h2-database&logoColor=white" width="100" />
+<img alt="H2" src="https://img.shields.io/badge/H2-0174AF?style=flat-circle&logo=h2-database&logoColor=white" width="70" />
 
 #### 🧰 Tools
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-circle&logo=docker&logoColor=white" width="110" />

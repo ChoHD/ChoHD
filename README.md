@@ -4,6 +4,7 @@
 <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=flat-circle&logo=java&logoColor=white" width="100" />
 
 #### 🖇️ Frameworks
+<img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=flat-circle&logo=spring&logoColor=white" width="120" />
 <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-circle&logo=spring-boot&logoColor=white" width="180" />
 
 #### ☁️ Cloud & Services

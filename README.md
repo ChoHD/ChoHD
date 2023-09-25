@@ -1,7 +1,7 @@
 ### 🛠 Tech Stack
 
 #### 🌐 Languages
-<img alt="Java" src="https://img.shields.io/badge/Java-007396?style=flat-circle&logo=java&logoColor=white" width="100" />
+<img alt="Java" src="https://img.shields.io/badge/Java-007396?style=flat-circle&logo=java&logoColor=white" width="85" />
 
 #### 🖇️ Frameworks
 <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=flat-circle&logo=spring&logoColor=white" width="120" />
